@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+html {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.grid-container {
+    position: absolute;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-areas: ". . ." ". . ." ". . .";
+}
+
+.content {
+    grid-column-start: 2;
+    margin-bottom: 20px;;
+    text-align: center;
+}
+
+.button-primary {
+    border: none;
+    background: #404040;
+    color: #ffffff !important;
+    font-weight: 100;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+.button-primary:hover {
+    color: #404040 !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: none;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.3s ease 0s;
+}
+
+.toast__container {
+    position: absolute;
+    right: 20px;
+    vertical-align: middle;
+}
+
+.toast__cell {
+    display: inline-block;
+}
+
+.add-margin {
+    margin-top: 20px;
+}
+
+.toast__svg {
+    fill: #fff;
+}
+
+.toast {
+    text-align: left;
+    padding: 21px 0;
+    background-color: #fff;
+    border-radius: 4px;
+    max-width: 500px;
+    top: 0px;
+    position: relative;
+    box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.2);
+}
+
+.toast:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.toast__message {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #878787;
+}
+
+.toast__content {
+    padding-left: 70px;
+    padding-right: 60px;
+}
+
+.toast__close {
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    width: 14px;
+    cursor: pointer;
+    height: 14px;
+    fill: #878787;
+    transform: translateY(-50%);
+}
+
+.toast--success--true .toast__icon {
+    background-color: #39b747;
+}
+
+.toast--success--true:before {
+    background-color: #39b747;
+}
+
+.toast--success--false .toast__icon {
+    background-color: #FFC007;
+}
+
+.toast--success--false:before {
+    background-color: #FFC007;
+}

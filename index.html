@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" type="text/css" href="css/theme.css">
+
+  <title>Bluetooth WebApi</title>
+
+</head>
+
+<body>
+  <div style="position: relative;">
+    <div class="grid-container">
+      <div class="content">
+        <div>
+          temperature <span id="temperature">-</span> C
+        </div>
+        <div>
+          humidity <span id="humidity">-</span> %
+        </div>
+        <div>
+          Battery <span id="battery">-</span> %
+        </div>
+      </div>
+
+      <div class="content">
+        <button id='connect-btn' class="button-primary" onClick="connect()">Connect Device</button>
+        <button id='disconnect-btn' style="display: none;" class="button-primary" onClick="disconnect()">Disconnect
+          Device</button>
+      </div>
+    </div>
+
+    <div class="toast__container" id="toast-container"></div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
