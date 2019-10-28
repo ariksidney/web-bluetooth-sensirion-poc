@@ -6,6 +6,6 @@ This example lets you connect a [Sensirion Dev Kit](https://www.sensirion.com/en
 
 ## Does my browser suppert the BLE Web API?
 
-Probably? [https://caniuse.com/#feat=mdn-api_bluetooth]()
+Probably? [https://caniuse.com/#feat=mdn-api_bluetooth](https://caniuse.com/#feat=mdn-api_bluetooth)
 
 
